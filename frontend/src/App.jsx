@@ -9,7 +9,7 @@ import CallPage from "./pages/CallPage.jsx";
 import ChatPage from "./pages/ChatPage.jsx";
 import NotificationsPage from "./pages/NotificationsPage.jsx";
 import OnBoardingPage from "./pages/OnBoardingPage.jsx";
-import SignupPage from "./pages/SignupPage.jsx";
+import SignUpPage from "./pages/SignUpPage.jsx";
 import PageLoader from "./components/PageLoader.jsx";
 
 import { Toaster } from "react-hot-toast";
@@ -47,7 +47,7 @@ const App = () => {
           <Route
           path="/signup"
           element={
-            !isAuthenticated ? <SignupPage /> : <Navigate to={isOnboarded ? "/" : "/onboarding"} />
+            !isAuthenticated ? <SignUpPage /> : <Navigate to={isOnboarded ? "/" : "/onboarding"} />
           }
         />
           <Route
